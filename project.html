@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" href="image/logo.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="portfolio.css" />
+    <style>
+      img{
+        box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 yellow;
+      }
+      .linkimage {
+  position: relative;
+}
+
+.img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.linkimage:hover .img {
+  opacity: 0.3;
+}
+
+.linkimage:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #f6fdfa;
+  color: rgb(14, 13, 13);
+  font-size: 10px;
+  padding: 10px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="back">
+      <div class="portfolio">
+        <header>
+          <nav class="navbar navbar-expand-sm navbar-dark text-bg-dark">
+            <div class="container-fluid ps-5">
+              <span class="navbar-text text-light" id="name"
+                ><i><strong>Thejaswini</strong></i></span
+              >
+            </div>
+            <div class="container-fluid justify-content-end">
+              <ul class="navbar-nav">
+                <li class="nav-item pe-5">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item pe-5">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item pe-5">
+                  <a class="nav-link" href="project.html">Project</a>
+                </li>
+                <li class="nav-item pe-5">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <div class="projectbackground">
+    <main>
+<div>
+  <h6 class="p-4 text-light">"Explore my coding snippets! Each project here is a bite-sized example of my commitment to elegant design and efficient functionality. Enjoy the brief journey through my web development ventures."</h6>
+  <div class="row">
+<div class="col-sm-4 text-center linkimage">
+<a href="https://codejourneytrainee.github.io/RockPaperWin.com/">
+  <img src="image/game.jpg" alt="Image" class="rounded" width="150px", height="150px"><br>
+  <p class="text-light p-2">Rock, Paper, Scissors Game.</p>
+
+ <div class="middle  pb-5">
+    <div class="text">This code represents a Rock, Paper, Scissors game with styling using CSS, HTML, and JavaScript. The game allows users to click on buttons to make their moves, and the computer generates a random move. The results are displayed along with points for the user and the computer.</div>
+  </div></a>
+</div>
+<div class="col-sm-4 text-center linkimage">
+  <a href="https://codejourneytrainee.github.io/TaskTracker.com/">
+    <img src="image/Todo.png" alt=" Image" class="rounded" width="150px", height="150px"><br><p class="text-light p-2">To-Do List.</p>
+  
+  <div class="middle pb-5">
+    <div class="text">This code implements a basic To-Do List application using HTML, CSS, and JavaScript. The user can enter a task, set a date and time, and add it to the list. Tasks are displayed along with their respective date and time. Users can also delete tasks from the list.
+    </div>
+  </div></a>
+  </div>
+  <div class="col-sm-4 text-center linkimage">
+    <a href="https://codejourneytrainee.github.io/CollegeEntranceForm.html/">
+      <img src="image/admission.jpg" alt="Image" class="rounded" width="150px", height="150px"><br><p class="text-light p-2">Admission Form.</p>
+    
+    <div class="middle pb-5">
+      <div class="text"> Bootstrap classes are used to style form elements and create a responsive layout. The form includes fields for the user's full name, email, phone number, date of birth,and gender. The Bootstrap grid system is utilized for the form layout, and form controls are styled using Bootstrap classes. </div>
+    </div></a>
+    </div>
+   
+  </div>
+  <div class="row ps-2 pe-2 pb-2">
+    <div class="col-sm-6 text-center linkimage">
+      <a href=" https://codejourneytrainee.github.io/SacredHaven/">
+        <img src="image/temple.jpg" alt="Image" class="rounded" width="150px", height="150px"><br><p class="text-light p-2">Temple Web page.</p>
+      
+      <div class="middle">
+        <div class="text">Explore the divine allure of India's temples with our web page, skillfully crafted using HTML, CSS, and Bootstrap. A fusion of technology and spirituality awaits as you embark on this visual and cultural adventure.</div>
+      </div></a>
+      </div>
+      <div class="col-sm-6 text-center linkimage">
+        <a href="https://github.com/CodeJourneyTrainee/TasteTrail.com.git">
+          <img src="image/food.png" alt="Image" class="rounded" width="150px", height="150px"><br><p class="text-light p-2">Online food order web page.</p>
+        
+        <div class="middle">
+          <div class="text">I've developed an interactive online food ordering web page using React, CSS, and Bootstrap. Leveraging React for dynamic components, CSS for styling, and Bootstrap for a responsive layout, the project showcases my front-end development skills.</div>
+        </div></a>
+        </div>
+
+  </div>
+</div>
+    </main>
+    
+    </div>
+  </body>
+</html>
